@@ -1,0 +1,616 @@
+﻿/* =========================================================
+   SRI SAI AKSHAYA LADIES TAILORING
+   GAGRA - COMPLETE CSS
+   MOBILE FULL IMAGE VERSION
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f3e7;
+    color: #263d2b;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    width: 100%;
+    min-height: 78px;
+    padding: 18px 5%;
+    background: linear-gradient( 135deg, #173d2b, #0d281c );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 2px solid #dcb75a;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    color: #e8c15a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(18px, 2.6vw, 32px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-btn {
+    text-decoration: none;
+    color: #173d2b;
+    background: linear-gradient( 135deg, #f4d477, #dcb75a );
+    padding: 11px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+}
+
+    .back-btn:hover {
+        transform: translateY(-2px);
+        background: linear-gradient( 135deg, #ffe59a, #e8c15a );
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.page-heading {
+    width: 100%;
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+
+.small-title {
+    color: #b08a2e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+
+.page-heading h1 {
+    color: #173d2b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 5vw, 48px);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   GOLD LINE
+========================================================= */
+
+.gold-line {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient( 90deg, #b08a2e, #f4d477, #b08a2e );
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.page-heading p {
+    max-width: 650px;
+    margin: auto;
+    color: #66736a;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GAGRA DESIGN GALLERY
+========================================================= */
+
+.design-gallery {
+    width: 90%;
+    max-width: 1400px;
+    margin: 10px auto 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================================================
+   DESIGN CARD
+========================================================= */
+
+.design-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dcb75a;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+    .design-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+    }
+
+
+    /* =========================================================
+   GAGRA IMAGE
+========================================================= */
+
+    .design-card img {
+        width: 100%;
+        height: 420px;
+        display: block;
+        object-fit: contain;
+        object-position: center;
+        background: #f8f3e7;
+        padding: 10px;
+        transition: transform 0.4s ease;
+    }
+
+
+    .design-card:hover img {
+        transform: scale(1.02);
+    }
+
+
+/* =========================================================
+   DESIGN INFO
+========================================================= */
+
+.design-info {
+    width: 100%;
+    text-align: center;
+    padding: 18px 15px 22px;
+    background: linear-gradient( 135deg, #ffffff, #fbf5e7 );
+}
+
+
+    .design-info span {
+        color: #b08a2e;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+    .design-info h2 {
+        margin-top: 7px;
+        color: #173d2b;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+    padding: 28px 20px;
+    background: #173d2b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    border-top: 2px solid #dcb75a;
+}
+
+
+    footer strong {
+        color: #e8c15a;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px;
+    }
+
+
+    footer span {
+        color: #d8dfd9;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .design-gallery {
+        width: 92%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .design-card img {
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   FULL GAGRA IMAGE
+   NO CROPPING
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HEADER */
+
+    header {
+        width: 100%;
+        min-height: 70px;
+        padding: 15px 4%;
+        gap: 10px;
+    }
+
+
+    .logo {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+
+    .back-btn {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+
+    /* PAGE HEADING */
+
+    .page-heading {
+        padding: 40px 15px 25px;
+    }
+
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+
+    .page-heading h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+
+    .gold-line {
+        width: 65px;
+        margin-bottom: 16px;
+    }
+
+
+    .page-heading p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       GALLERY
+    ===================================================== */
+
+    .design-gallery {
+        width: 92%;
+        margin: 10px auto 45px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* =====================================================
+       CARD
+    ===================================================== */
+
+    .design-card {
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+
+        /* =====================================================
+       IMPORTANT
+       FULL IMAGE - NO FIXED HEIGHT
+    ===================================================== */
+
+        .design-card img {
+            width: 100% !important;
+            height: auto !important;
+            min-height: 0 !important;
+            max-height: none !important;
+            display: block !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            padding: 8px !important;
+            background: #f8f3e7;
+            transform: none !important;
+        }
+
+
+        /* Prevent hover crop/zoom */
+
+        .design-card:hover img {
+            transform: none !important;
+        }
+
+
+    /* =====================================================
+       CARD INFO
+    ===================================================== */
+
+    .design-info {
+        width: 100%;
+        padding: 15px 10px 18px;
+        text-align: center;
+    }
+
+
+        .design-info span {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+        }
+
+
+        .design-info h2 {
+            font-size: 20px;
+            margin-top: 6px;
+        }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+
+        footer strong {
+            font-size: 16px;
+        }
+
+
+        footer span {
+            font-size: 11px;
+        }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   360px - 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    header {
+        min-height: 68px;
+        padding: 13px 3%;
+    }
+
+
+    .logo {
+        font-size: 13px;
+        letter-spacing: 0.8px;
+    }
+
+
+    .back-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+
+    .page-heading {
+        padding: 32px 12px 20px;
+    }
+
+
+        .page-heading h1 {
+            font-size: 29px;
+        }
+
+
+        .page-heading p {
+            font-size: 13px;
+        }
+
+
+    .design-gallery {
+        width: 94%;
+        gap: 20px;
+    }
+
+
+    /* FULL IMAGE */
+
+    .design-card img {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        padding: 6px !important;
+        object-fit: contain !important;
+    }
+
+
+    .design-info {
+        padding: 13px 8px 16px;
+    }
+
+
+        .design-info h2 {
+            font-size: 18px;
+        }
+}
+
+
+/* =========================================================
+   CONTACT FLOATING BUTTONS
+========================================================= */
+
+.contact-buttons {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 9999;
+}
+
+
+.contact-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease;
+}
+
+
+    .contact-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .contact-btn:hover {
+        transform: scale(1.12);
+    }
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.instagram {
+    background: #E1306C;
+    color: white;
+}
+
+
+/* =========================================================
+   CALL
+========================================================= */
+
+.call {
+    background: #00695C;
+    color: white;
+    border: 2px solid #d9a928;
+}
+
+
+/* =========================================================
+   CONTACT BUTTONS - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-buttons {
+        right: 15px;
+        bottom: 18px;
+        gap: 10px;
+    }
+
+
+    .contact-btn {
+        width: 48px;
+        height: 48px;
+    }
+
+
+        .contact-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+}
+
+
+/* =========================================================
+   EXTRA MOBILE SAFETY
+   NEVER CROP GAGRA IMAGES
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .design-card,
+    .design-card a,
+    .design-card figure {
+        height: auto !important;
+        max-height: none !important;
+        overflow: hidden;
+    }
+
+
+        .design-card img {
+            aspect-ratio: auto !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: none !important;
+        }
+}

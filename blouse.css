@@ -1,0 +1,931 @@
+﻿/* =========================================================
+   SRI SAI AKSHAYA LADIES TAILORING
+   BLOUSE MODELS PAGE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8f3e7;
+    color: #063f32;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    width: 100%;
+    min-height: 88px;
+    background: #063f32;
+    border-bottom: 2px solid #d9ad3f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    color: #e8c15a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(18px, 2.6vw, 32px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #063f32;
+    background: linear-gradient( 135deg, #f4d477, #dcb75a );
+    text-decoration: none;
+    border: 1px solid #e5bd55;
+    padding: 11px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+    .home-btn:hover {
+        background: #f4d477;
+        color: #063f32;
+        transform: translateY(-2px);
+    }
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.page-heading {
+    width: 100%;
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+
+.small-title {
+    color: #b18424;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+
+.page-heading h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 62px);
+    color: #064536;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.gold-line {
+    width: 110px;
+    height: 3px;
+    margin: auto;
+    background: linear-gradient( 90deg, transparent, #d9ad3f, transparent );
+    position: relative;
+}
+
+
+    .gold-line::after {
+        content: "◆";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #d9ad3f;
+        font-size: 9px;
+        background: #f8f3e7;
+        padding: 0 7px;
+    }
+
+
+/* =========================================================
+   MODELS CONTAINER
+========================================================= */
+
+.models-container {
+    width: min(1200px, 92%);
+    margin: 10px auto 75px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+
+/* =========================================================
+   MODEL CARD
+========================================================= */
+
+.model-card {
+    width: 100%;
+    background: linear-gradient( 145deg, #ffffff, #fbf5e7 );
+    border: 1px solid #dcb75a;
+    border-radius: 18px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+    .model-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 42px rgba(0, 0, 0, 0.18);
+    }
+
+
+    /* =========================================================
+   CARD IMAGE
+========================================================= */
+
+    .model-card img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+
+    .model-card:hover img {
+        transform: scale(1.04);
+    }
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.model-content {
+    width: 100%;
+    padding: 21px 20px 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   DESIGN NUMBER
+========================================================= */
+
+.model-number {
+    display: block;
+    color: #b18424;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MODEL NAME
+========================================================= */
+
+.model-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #064536;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   VIEW DESIGNS
+========================================================= */
+
+.model-content > span:last-child {
+    display: block;
+    color: #a67c1d;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CARD DECORATION
+========================================================= */
+
+.model-card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(217, 173, 63, 0.10);
+    top: -58px;
+    right: -45px;
+    pointer-events: none;
+}
+
+
+.model-card::after {
+    content: "✦";
+    position: absolute;
+    bottom: 13px;
+    right: 18px;
+    color: #d9ad3f;
+    font-size: 18px;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+    background: #063f32;
+    color: #e8c15a;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 2px solid #d9ad3f;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   CONTACT FLOATING BUTTONS
+========================================================= */
+
+.contact-buttons {
+    position: fixed !important;
+    right: 25px !important;
+    bottom: 25px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 14px !important;
+    z-index: 99999 !important;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.contact-btn {
+    width: 55px !important;
+    height: 55px !important;
+    min-width: 55px !important;
+    min-height: 55px !important;
+    max-width: 55px !important;
+    max-height: 55px !important;
+    flex: 0 0 55px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+
+    .contact-btn svg {
+        width: 28px !important;
+        height: 28px !important;
+        min-width: 28px !important;
+        min-height: 28px !important;
+        max-width: 28px !important;
+        max-height: 28px !important;
+        display: block;
+        margin: 0;
+    }
+
+
+    /* =========================================================
+   CONTACT HOVER
+========================================================= */
+
+    .contact-btn:hover {
+        transform: scale(1.12);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+    }
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.instagram {
+    background: #E1306C;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CALL
+========================================================= */
+
+.call {
+    background: #00695C;
+    color: #ffffff;
+    border: 2px solid #d9a928;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        min-height: 78px;
+        padding: 0 4%;
+    }
+
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+
+
+    .home-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+
+    .models-container {
+        width: 94%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+
+    .model-card img {
+        height: 230px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   EXACTLY 1 CARD PER ROW
+========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* =====================================================
+       HEADER
+       CENTER LOGO + RIGHT HOME
+    ===================================================== */
+
+    header {
+        width: 100% !important;
+        height: 72px !important;
+        min-height: 72px !important;
+        padding: 0 10px !important;
+        display: block !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+        /* =====================================================
+       LOGO - EXACT CENTER
+    ===================================================== */
+
+        header .logo {
+            position: absolute !important;
+            left: 50% !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: auto !important;
+            max-width: 55% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center !important;
+            white-space: nowrap !important;
+            font-size: 13px !important;
+            line-height: 1.15 !important;
+            letter-spacing: 0.7px !important;
+            z-index: 2 !important;
+        }
+
+
+        /* =====================================================
+       HOME BUTTON - RIGHT CORNER
+    ===================================================== */
+
+        header .home-btn {
+            position: absolute !important;
+            top: 50% !important;
+            right: 10px !important;
+            left: auto !important;
+            transform: translateY(-50%) !important;
+            width: auto !important;
+            min-width: 0 !important;
+            max-width: max-content !important;
+            height: auto !important;
+            min-height: 0 !important;
+            margin: 0 !important;
+            padding: 8px 12px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-radius: 22px !important;
+            font-size: 11px !important;
+            line-height: 1 !important;
+            white-space: nowrap !important;
+            z-index: 10 !important;
+        }
+
+
+            header .home-btn:hover {
+                transform: translateY(-50%) !important;
+            }
+
+
+    /* =====================================================
+       PAGE HEADING
+    ===================================================== */
+
+    .page-heading {
+        padding: 42px 15px 30px;
+    }
+
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+
+    .page-heading h1 {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+
+    .gold-line {
+        width: 75px;
+        height: 3px;
+    }
+
+
+    /* =====================================================
+       MODELS
+    ===================================================== */
+
+    .models-container {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 10px auto 55px;
+    }
+
+
+    /* =====================================================
+       CARD
+    ===================================================== */
+
+    .model-card {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+
+        /* =====================================================
+       CARD IMAGE
+    ===================================================== */
+
+        .model-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+    /* =====================================================
+       CARD CONTENT
+    ===================================================== */
+
+    .model-content {
+        padding: 20px 18px 23px;
+    }
+
+
+    .model-number {
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+
+
+    .model-content h2 {
+        font-size: 23px;
+        line-height: 1.2;
+        margin-bottom: 9px;
+    }
+
+
+    .model-content > span:last-child {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       FLOATING BUTTONS
+    ===================================================== */
+
+    .contact-buttons {
+        right: 14px !important;
+        bottom: 16px !important;
+        gap: 10px !important;
+    }
+
+
+    .contact-btn {
+        width: 52px !important;
+        height: 52px !important;
+        min-width: 52px !important;
+        min-height: 52px !important;
+        max-width: 52px !important;
+        max-height: 52px !important;
+        flex: 0 0 52px !important;
+    }
+
+
+        .contact-btn svg {
+            width: 26px !important;
+            height: 26px !important;
+            min-width: 26px !important;
+            min-height: 26px !important;
+            max-width: 26px !important;
+            max-height: 26px !important;
+        }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 400px) {
+
+    /* HEADER */
+
+    header {
+        height: 68px !important;
+        min-height: 68px !important;
+        padding: 0 8px !important;
+    }
+
+
+        header .logo {
+            max-width: 52% !important;
+            font-size: 11px !important;
+            letter-spacing: 0.5px !important;
+        }
+
+
+        header .home-btn {
+            right: 7px !important;
+            padding: 7px 10px !important;
+            font-size: 10px !important;
+        }
+
+
+    /* PAGE HEADING */
+
+    .page-heading {
+        padding: 35px 12px 25px;
+    }
+
+
+    .small-title {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+    }
+
+
+    .page-heading h1 {
+        font-size: 34px;
+    }
+
+
+    /* CARDS */
+
+    .models-container {
+        width: 94%;
+        gap: 18px;
+    }
+
+
+    .model-card {
+        border-radius: 15px;
+    }
+
+
+        .model-card img {
+            height: 220px;
+        }
+
+
+    .model-content {
+        padding: 17px 14px 20px;
+    }
+
+
+        .model-content h2 {
+            font-size: 21px;
+        }
+
+
+        .model-content > span:last-child {
+            font-size: 11px;
+        }
+
+
+    /* FLOATING BUTTONS */
+
+    .contact-buttons {
+        right: 10px !important;
+        bottom: 10px !important;
+        gap: 8px !important;
+    }
+
+
+    .contact-btn {
+        width: 50px !important;
+        height: 50px !important;
+        min-width: 50px !important;
+        min-height: 50px !important;
+        max-width: 50px !important;
+        max-height: 50px !important;
+        flex-basis: 50px !important;
+    }
+
+
+        .contact-btn svg {
+            width: 25px !important;
+            height: 25px !important;
+            min-width: 25px !important;
+            min-height: 25px !important;
+            max-width: 25px !important;
+            max-height: 25px !important;
+        }
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+========================================================= */
+
+@media screen and (max-width: 350px) {
+
+    header {
+        height: 64px !important;
+        min-height: 64px !important;
+    }
+
+
+        header .logo {
+            font-size: 9px !important;
+            max-width: 50% !important;
+        }
+
+
+        header .home-btn {
+            right: 5px !important;
+            padding: 6px 8px !important;
+            font-size: 9px !important;
+        }
+
+
+    .model-card img {
+        height: 200px;
+    }
+
+
+    .contact-buttons {
+        right: 8px !important;
+        bottom: 8px !important;
+    }
+
+
+    .contact-btn {
+        width: 46px !important;
+        height: 46px !important;
+        min-width: 46px !important;
+        min-height: 46px !important;
+        max-width: 46px !important;
+        max-height: 46px !important;
+        flex-basis: 46px !important;
+    }
+
+
+        .contact-btn svg {
+            width: 23px !important;
+            height: 23px !important;
+            min-width: 23px !important;
+            min-height: 23px !important;
+            max-width: 23px !important;
+            max-height: 23px !important;
+        }
+}
+/* =========================================================
+   FINAL MOBILE HEADER FIX
+   LOGO CENTER + HOME RIGHT
+========================================================= */
+
+@media screen and (max-width: 650px) {
+
+    header {
+        position: relative !important;
+        width: 100% !important;
+        height: 72px !important;
+        min-height: 72px !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+    }
+
+
+        /* ===============================
+       LOGO - EXACT CENTER
+    =============================== */
+
+        header .logo {
+            position: absolute !important;
+            left: 50% !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 55% !important;
+            max-width: 55% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center !important;
+            font-size: 10px !important;
+            line-height: 1.15 !important;
+            letter-spacing: 0.5px !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: clip !important;
+            z-index: 2 !important;
+        }
+
+
+        /* ===============================
+       HOME - RIGHT CORNER
+    =============================== */
+
+        header .home-btn {
+            position: absolute !important;
+            right: 9px !important;
+            top: 50% !important;
+            left: auto !important;
+            transform: translateY(-50%) !important;
+            width: auto !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 7px 11px !important;
+            font-size: 10px !important;
+            line-height: 1 !important;
+            border-radius: 22px !important;
+            white-space: nowrap !important;
+            z-index: 20 !important;
+        }
+
+            header .home-btn:hover {
+                transform: translateY(-50%) !important;
+            }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 400px) {
+
+    header {
+        height: 68px !important;
+        min-height: 68px !important;
+    }
+
+
+        header .logo {
+            width: 53% !important;
+            max-width: 53% !important;
+            font-size: 9px !important;
+            letter-spacing: 0.3px !important;
+        }
+
+
+        header .home-btn {
+            right: 7px !important;
+            padding: 6px 9px !important;
+            font-size: 9px !important;
+        }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 350px) {
+
+    header {
+        height: 64px !important;
+        min-height: 64px !important;
+    }
+
+
+        header .logo {
+            width: 50% !important;
+            max-width: 50% !important;
+            font-size: 8px !important;
+        }
+
+
+        header .home-btn {
+            right: 5px !important;
+            padding: 6px 8px !important;
+            font-size: 8px !important;
+        }
+}

@@ -1,0 +1,889 @@
+﻿/* =========================================================
+   SRI SAI AKSHAYA LADIES TAILORING
+   COMMON INNER PAGE CSS
+   ========================================================= */
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f3e8;
+    color: #004d40;
+    font-family: Georgia, "Times New Roman", serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   SAME FOR:
+   LONG FROCKS
+   SAREE PLEATING
+   SAREE KUCHULU
+   COMPUTER WORK
+   MAGGAM WORK
+========================================================= */
+
+header {
+    width: 100%;
+    height: 85px;
+    min-height: 85px;
+    background: linear-gradient( 135deg, #173d2b, #004d40, #0d281c );
+    border-bottom: 2px solid #d9a928;
+    display: flex;
+    align-items: center;
+    /* LOGO LEFT + BUTTON RIGHT */
+    justify-content: space-between;
+    padding: 0 7%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    color: #d9a928;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-align: left;
+    /* IMPORTANT - NO CUTTING */
+    width: auto;
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    flex-shrink: 1;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.home-btn {
+    flex-shrink: 0;
+    color: #173d2b;
+    background: linear-gradient( 135deg, #f4d477, #dcb75a );
+    text-decoration: none;
+    border: 1px solid #d9a928;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+}
+
+
+    .home-btn:hover {
+        background: #f4d477;
+        color: #173d2b;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    }
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.page-heading {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px 35px;
+}
+
+
+.small-title {
+    color: #b47b00;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.page-heading h1 {
+    color: #004d40;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+
+.gold-line {
+    width: 80px;
+    height: 3px;
+    background: #d9a928;
+    margin: 15px auto;
+}
+
+
+.page-heading p {
+    max-width: 700px;
+    margin: 15px auto 0;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DESIGNS CONTAINER
+   DESKTOP = 2 CARDS PER ROW
+========================================================= */
+
+.designs-container {
+    width: 94%;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( 2, minmax(0, 1fr) );
+    gap: 24px;
+    padding-bottom: 70px;
+}
+
+
+/* =========================================================
+   DESIGN CARD
+========================================================= */
+
+.design-card {
+    width: 100%;
+    background: #fffdf8;
+    border: 1px solid #d9a928;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    .design-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.17);
+    }
+
+
+/* =========================================================
+   IMAGE BOX
+========================================================= */
+
+.image-box {
+    width: 100%;
+    height: 420px;
+    background: #fffdf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.design-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    background: #fffdf8;
+    transition: transform 0.4s ease;
+}
+
+
+.design-card:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   DESIGN INFO
+========================================================= */
+
+.design-info {
+    width: 100%;
+    text-align: center;
+    padding: 16px 8px 20px;
+    background: #fffdf8;
+}
+
+
+    .design-info span {
+        display: block;
+        color: #b47b00;
+        font-size: 11px;
+        letter-spacing: 4px;
+        margin-bottom: 8px;
+    }
+
+
+    .design-info h2 {
+        color: #004d40;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+    background: #004d40;
+    color: #d9a928;
+    text-align: center;
+    padding: 28px 20px;
+    border-top: 2px solid #d9a928;
+}
+
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+
+    footer p {
+        margin-top: 8px;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+
+/* =========================================================
+   FLOATING CONTACT BUTTONS
+========================================================= */
+
+.floating-contact {
+    position: fixed;
+    right: 18px;
+    bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    z-index: 99999;
+    width: 58px;
+    pointer-events: none;
+}
+
+
+    /* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+    .floating-contact .contact-btn {
+        width: 58px !important;
+        height: 58px !important;
+        min-width: 58px !important;
+        min-height: 58px !important;
+        max-width: 58px !important;
+        max-height: 58px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-decoration: none !important;
+        box-sizing: border-box;
+        overflow: hidden;
+        pointer-events: auto;
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+
+        .floating-contact .contact-btn:hover {
+            transform: scale(1.10);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+        }
+
+
+        /* =========================================================
+   CONTACT ICON
+========================================================= */
+
+        .floating-contact .contact-btn span {
+            width: 100% !important;
+            height: 100% !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px !important;
+            line-height: 1 !important;
+            color: white !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+
+    /* =========================================================
+   WHATSAPP
+========================================================= */
+
+    .floating-contact .whatsapp {
+        background: #25D366 !important;
+        border: none !important;
+    }
+
+
+        .floating-contact .whatsapp span {
+            font-size: 30px !important;
+        }
+
+
+    /* =========================================================
+   INSTAGRAM
+========================================================= */
+
+    .floating-contact .instagram {
+        background: #E1306C !important;
+        border: none !important;
+    }
+
+
+        .floating-contact .instagram span {
+            font-size: 30px !important;
+        }
+
+
+    /* =========================================================
+   CALL
+========================================================= */
+
+    .floating-contact .call {
+        background: #004d40 !important;
+        border: 2px solid #d9a928 !important;
+    }
+
+
+        .floating-contact .call span {
+            font-size: 28px !important;
+        }
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 19px;
+        letter-spacing: 1.5px;
+    }
+
+    .home-btn {
+        padding: 9px 17px;
+        font-size: 13px;
+    }
+
+    .designs-container {
+        width: 94%;
+        gap: 20px;
+    }
+
+    .image-box {
+        height: 360px;
+    }
+
+    .design-card img {
+        height: 100%;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    header {
+        height: 78px;
+        min-height: 78px;
+        padding: 0 4%;
+    }
+
+
+    .logo {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+
+    .home-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+
+    .page-heading {
+        padding: 40px 15px 30px;
+    }
+
+
+        .page-heading h1 {
+            font-size: 43px;
+        }
+
+
+    .small-title {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+
+    .page-heading p {
+        font-size: 15px;
+    }
+
+
+    .designs-container {
+        width: 94%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+
+    .image-box {
+        height: 330px;
+    }
+
+
+    .design-info h2 {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   LOGO + HOME BUTTON SAME LINE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        width: 100%;
+        height: 78px;
+        min-height: 78px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+
+        /* =====================================================
+       FULL LOGO
+       NO ELLIPSIS
+       NO CUTTING
+    ===================================================== */
+
+        header .logo {
+            position: static !important;
+            transform: none !important;
+            width: auto !important;
+            max-width: none !important;
+            flex: 1 1 auto !important;
+            min-width: 0 !important;
+            color: #d9a928 !important;
+            font-family: Georgia, "Times New Roman", serif !important;
+            font-size: 11px !important;
+            font-weight: bold !important;
+            letter-spacing: 0.5px !important;
+            line-height: 1.2 !important;
+            white-space: nowrap !important;
+            overflow: visible !important;
+            text-overflow: clip !important;
+            text-align: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            z-index: 2 !important;
+        }
+
+
+        /* =====================================================
+       HOME BUTTON
+       RIGHT SIDE
+    ===================================================== */
+
+        header .home-btn {
+            position: static !important;
+            transform: none !important;
+            flex: 0 0 auto !important;
+            width: auto !important;
+            min-width: 0 !important;
+            margin: 0 !important;
+            padding: 8px 13px !important;
+            color: #173d2b !important;
+            background: linear-gradient( 135deg, #f4d477, #dcb75a ) !important;
+            border: 1px solid #d9a928 !important;
+            border-radius: 25px !important;
+            font-family: Georgia, "Times New Roman", serif !important;
+            font-size: 12px !important;
+            font-weight: 700 !important;
+            line-height: 1 !important;
+            white-space: nowrap !important;
+            text-decoration: none !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+            z-index: 10 !important;
+        }
+
+
+            header .home-btn:hover {
+                transform: none !important;
+                background: #f4d477 !important;
+            }
+
+
+    /* =====================================================
+       PAGE HEADING
+    ===================================================== */
+
+    .page-heading {
+        padding: 35px 12px 25px;
+    }
+
+
+    .small-title {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+        margin-bottom: 8px;
+    }
+
+
+    .page-heading h1 {
+        font-size: 34px;
+        margin: 8px 0;
+    }
+
+
+    .gold-line {
+        width: 60px;
+        height: 2px;
+        margin: 12px auto;
+    }
+
+
+    .page-heading p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 12px;
+    }
+
+
+    /* =====================================================
+       MOBILE GALLERY
+       ONE IMAGE / CARD AFTER ANOTHER
+    ===================================================== */
+
+    .designs-container {
+        width: calc(100% - 24px);
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-bottom: 55px;
+    }
+
+
+    /* =====================================================
+       CARD
+    ===================================================== */
+
+    .design-card {
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       IMAGE BOX
+       FULL IMAGE
+    ===================================================== */
+
+    .image-box {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        display: block;
+        overflow: visible;
+        background: #fffdf8;
+    }
+
+
+    /* =====================================================
+       IMAGE
+       IMPORTANT:
+       FULL IMAGE WITHOUT CROPPING
+    ===================================================== */
+
+    .design-card img {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        display: block !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        background: #fffdf8;
+        transform: none !important;
+    }
+
+
+    .design-card:hover img {
+        transform: none !important;
+    }
+
+
+    /* =====================================================
+       DESIGN INFO
+    ===================================================== */
+
+    .design-info {
+        padding: 15px 8px 20px;
+    }
+
+
+        .design-info span {
+            font-size: 9px;
+            letter-spacing: 3px;
+            margin-bottom: 6px;
+        }
+
+
+        .design-info h2 {
+            font-size: 19px;
+            margin-top: 4px;
+        }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+        padding: 24px 15px;
+    }
+
+
+        footer h3 {
+            font-size: 16px;
+        }
+
+
+        footer p {
+            font-size: 11px;
+            letter-spacing: 1.5px;
+        }
+
+
+    /* =====================================================
+       FLOATING BUTTONS
+    ===================================================== */
+
+    .floating-contact {
+        right: 10px;
+        bottom: 15px;
+        gap: 9px;
+        width: 48px;
+    }
+
+
+        .floating-contact .contact-btn {
+            width: 48px !important;
+            height: 48px !important;
+            min-width: 48px !important;
+            min-height: 48px !important;
+            max-width: 48px !important;
+            max-height: 48px !important;
+            border-radius: 50% !important;
+        }
+
+
+            .floating-contact .contact-btn span {
+                font-size: 24px !important;
+            }
+
+
+        .floating-contact .call span {
+            font-size: 22px !important;
+        }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    header {
+        height: 74px;
+        min-height: 74px;
+        padding: 0 8px;
+        gap: 6px;
+    }
+
+
+        /* FULL NAME - SMALL BUT COMPLETE */
+
+        header .logo {
+            font-size: 9px !important;
+            letter-spacing: 0.2px !important;
+            max-width: none !important;
+            overflow: visible !important;
+            text-overflow: clip !important;
+            white-space: nowrap !important;
+        }
+
+
+        header .home-btn {
+            padding: 7px 10px !important;
+            font-size: 10px !important;
+        }
+
+
+    .page-heading {
+        padding: 30px 10px 22px;
+    }
+
+
+        .page-heading h1 {
+            font-size: 30px;
+        }
+
+
+    .small-title {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+
+    .page-heading p {
+        font-size: 13px;
+    }
+
+
+    .designs-container {
+        width: calc(100% - 18px);
+        gap: 20px;
+    }
+
+
+    .design-info {
+        padding: 14px 6px 18px;
+    }
+
+
+        .design-info span {
+            font-size: 8px;
+            letter-spacing: 2.5px;
+        }
+
+
+        .design-info h2 {
+            font-size: 18px;
+        }
+
+
+    /* FLOATING */
+
+    .floating-contact {
+        right: 8px;
+        bottom: 12px;
+        gap: 7px;
+    }
+
+
+        .floating-contact .contact-btn {
+            width: 45px !important;
+            height: 45px !important;
+            min-width: 45px !important;
+            min-height: 45px !important;
+            max-width: 45px !important;
+            max-height: 45px !important;
+        }
+
+
+            .floating-contact .contact-btn span {
+                font-size: 22px !important;
+            }
+
+
+        .floating-contact .call span {
+            font-size: 20px !important;
+        }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    header {
+        padding: 0 6px;
+        gap: 5px;
+    }
+
+
+        header .logo {
+            font-size: 8px !important;
+            letter-spacing: 0 !important;
+        }
+
+
+        header .home-btn {
+            padding: 6px 9px !important;
+            font-size: 9px !important;
+        }
+}

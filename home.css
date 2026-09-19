@@ -1,0 +1,640 @@
+﻿/* =========================================================
+   SRI SAI AKSHAYA LADIES TAILORING
+   HOME PAGE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #062f24;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HERO / HOME BANNER
+========================================================= */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient( rgba(2, 38, 29, 0.38), rgba(2, 38, 29, 0.48) ), url("assets/home-banner.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+    /* DARK PREMIUM OVERLAY */
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient( circle at center, transparent 20%, rgba(0, 25, 18, 0.35) 100% );
+        pointer-events: none;
+    }
+
+
+    /* GOLD BORDER */
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 12px;
+        border: 1px solid rgba(229, 190, 78, 0.65);
+        border-radius: 12px;
+        pointer-events: none;
+    }
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: min(900px, 90%);
+    padding: 40px 25px;
+}
+
+
+    /* TAGLINE */
+
+    .hero-content .tagline {
+        color: #e7bd4d;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+
+    /* =========================================================
+   MAIN TITLE
+========================================================= */
+
+    .hero-content h1 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(48px, 6vw, 82px);
+        line-height: 1.03;
+        font-weight: 700;
+        color: #fff8df;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+        margin-bottom: 10px;
+    }
+
+
+        /* BUSINESS NAME */
+
+        .hero-content h1 span {
+            display: block;
+            color: #e9bd4f;
+            margin: 4px 0;
+        }
+
+
+/* =========================================================
+   GOLD LINE
+========================================================= */
+
+.gold-line {
+    width: 150px;
+    height: 3px;
+    margin: 28px auto;
+    background: linear-gradient( 90deg, transparent, #e5b943, transparent );
+    position: relative;
+}
+
+
+    /* CENTER DIAMOND */
+
+    .gold-line::after {
+        content: "◆";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #e5b943;
+        font-size: 12px;
+        background: #073a2b;
+        padding: 0 8px;
+    }
+
+
+/* =========================================================
+   SERVICES TEXT
+========================================================= */
+
+.hero-services {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #f5ecd1;
+    font-size: 17px;
+    line-height: 1.9;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/* =========================================================
+   GO BUTTON
+========================================================= */
+
+.go-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 165px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: 1px solid #f0c85c;
+    background: linear-gradient( 135deg, #f2cc63, #dba92f );
+    color: #073a2b;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+
+    /* ARROW */
+
+    .go-btn::after {
+        content: "→";
+        font-size: 22px;
+        transition: transform 0.3s ease;
+    }
+
+
+    /* HOVER */
+
+    .go-btn:hover {
+        transform: translateY(-5px);
+        background: linear-gradient( 135deg, #ffe18a, #e5b63c );
+        box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45);
+    }
+
+        .go-btn:hover::after {
+            transform: translateX(6px);
+        }
+
+
+/* =========================================================
+   TOP DECORATION
+========================================================= */
+
+.hero-decoration {
+    color: #e5b943;
+    font-size: 24px;
+    letter-spacing: 8px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.scroll-down {
+    position: absolute;
+    z-index: 3;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e5c76d;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+    .scroll-down::after {
+        content: "↓";
+        display: block;
+        font-size: 20px;
+        margin-top: 5px;
+        animation: scrollArrow 1.5s infinite;
+    }
+
+
+@keyframes scrollArrow {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+}
+
+
+/* =========================================================
+   FLOATING CONTACT BUTTONS
+   SAME STYLE AS SERVICES PAGE
+========================================================= */
+
+
+/* MAIN CONTAINER */
+
+.contact-buttons,
+.social-buttons {
+    position: fixed !important;
+    right: 18px !important;
+    bottom: 18px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+    z-index: 99999 !important;
+}
+
+
+    /* =========================================================
+   ALL FLOATING BUTTONS
+========================================================= */
+
+    .contact-buttons .contact-btn,
+    .social-buttons .social-btn,
+    .whatsapp-button,
+    .instagram-btn,
+    .call-btn,
+    .whatsapp-btn {
+        width: 58px !important;
+        height: 58px !important;
+        min-width: 58px !important;
+        min-height: 58px !important;
+        max-width: 58px !important;
+        max-height: 58px !important;
+        flex: 0 0 58px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        text-decoration: none !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.35) !important;
+        transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+    }
+
+
+        /* =========================================================
+   SVG ICONS
+========================================================= */
+
+        .contact-buttons .contact-btn svg,
+        .social-buttons .social-btn svg,
+        .instagram-btn svg,
+        .whatsapp-btn svg,
+        .call-btn svg {
+            width: 30px !important;
+            height: 30px !important;
+            min-width: 30px !important;
+            min-height: 30px !important;
+            max-width: 30px !important;
+            max-height: 30px !important;
+            display: block !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            flex: 0 0 auto !important;
+        }
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp-button,
+.whatsapp-btn {
+    background: #25D366 !important;
+}
+
+    .whatsapp-button span {
+        color: #fff !important;
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.instagram-btn {
+    background: linear-gradient( 135deg, #833ab4, #fd1d1d, #fcb045 ) !important;
+}
+
+    .instagram-btn svg {
+        stroke: #fff !important;
+    }
+
+
+/* =========================================================
+   CALL
+========================================================= */
+
+.call-btn {
+    background: #006b5b !important;
+}
+
+    .call-btn svg {
+        stroke: #fff !important;
+        fill: none !important;
+    }
+
+
+    /* =========================================================
+   HOVER
+========================================================= */
+
+    .contact-buttons .contact-btn:hover,
+    .social-buttons .social-btn:hover,
+    .whatsapp-button:hover,
+    .instagram-btn:hover,
+    .whatsapp-btn:hover,
+    .call-btn:hover {
+        transform: scale(1.08) !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+    }
+
+
+/* =========================================================
+   MOBILE HERO
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        width: 100%;
+        min-height: 100svh;
+        height: 100svh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+
+        .hero::after {
+            inset: 8px;
+        }
+
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 18px;
+    }
+
+
+        .hero-content .tagline {
+            font-size: 10px;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+
+        .hero-content h1 {
+            font-size: clamp( 40px, 11vw, 58px );
+            line-height: 1.08;
+        }
+
+
+    .hero-services {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 0 8px;
+        margin-bottom: 25px;
+    }
+
+
+    .go-btn {
+        min-width: 145px;
+        padding: 14px 26px;
+        font-size: 16px;
+    }
+
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE FLOATING BUTTONS
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .contact-buttons,
+    .social-buttons {
+        right: 12px !important;
+        bottom: 14px !important;
+        gap: 9px !important;
+    }
+
+
+        .contact-buttons .contact-btn,
+        .social-buttons .social-btn,
+        .whatsapp-button,
+        .instagram-btn,
+        .call-btn,
+        .whatsapp-btn {
+            width: 54px !important;
+            height: 54px !important;
+            min-width: 54px !important;
+            min-height: 54px !important;
+            max-width: 54px !important;
+            max-height: 54px !important;
+            flex-basis: 54px !important;
+        }
+
+
+            .contact-buttons .contact-btn svg,
+            .social-buttons .social-btn svg,
+            .instagram-btn svg,
+            .whatsapp-btn svg,
+            .call-btn svg {
+                width: 28px !important;
+                height: 28px !important;
+                min-width: 28px !important;
+                min-height: 28px !important;
+                max-width: 28px !important;
+                max-height: 28px !important;
+            }
+
+
+            .whatsapp-button span {
+                font-size: 28px !important;
+            }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 450px) {
+
+    .hero {
+        min-height: 100svh;
+        height: 100svh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+    .hero-content {
+        padding: 20px 15px;
+    }
+
+
+        .hero-content h1 {
+            font-size: 39px;
+            line-height: 1.08;
+        }
+
+
+        .hero-content .tagline {
+            font-size: 9px;
+            letter-spacing: 2px;
+        }
+
+
+    .hero-services {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    .go-btn {
+        padding: 13px 25px;
+    }
+
+
+    /* FLOATING BUTTONS */
+
+    .contact-buttons,
+    .social-buttons {
+        right: 10px !important;
+        bottom: 10px !important;
+        gap: 8px !important;
+    }
+
+
+        .contact-buttons .contact-btn,
+        .social-buttons .social-btn,
+        .whatsapp-button,
+        .instagram-btn,
+        .call-btn,
+        .whatsapp-btn {
+            width: 52px !important;
+            height: 52px !important;
+            min-width: 52px !important;
+            min-height: 52px !important;
+            max-width: 52px !important;
+            max-height: 52px !important;
+            flex-basis: 52px !important;
+        }
+
+
+            .contact-buttons .contact-btn svg,
+            .social-buttons .social-btn svg,
+            .instagram-btn svg,
+            .whatsapp-btn svg,
+            .call-btn svg {
+                width: 27px !important;
+                height: 27px !important;
+                min-width: 27px !important;
+                min-height: 27px !important;
+                max-width: 27px !important;
+                max-height: 27px !important;
+            }
+}
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #173d2b, #004d40, #0d281c);
+    border-top: 2px solid #d9a928;
+    color: #f8f3e8;
+}
+
+    footer h3 {
+        margin: 0 0 8px;
+        color: #d9a928;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 20px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 13px;
+        color: #f8f3e8;
+    }
+
+.footer-location {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #173d2b;
+    background: linear-gradient(135deg, #f4d477, #dcb75a);
+    border: 1px solid #d9a928;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .4px;
+    transition: .3s ease;
+}
+
+    .footer-location:hover {
+        transform: translateY(-2px);
+        background: #f4d477;
+    }
